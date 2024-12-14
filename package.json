@@ -1,8 +1,8 @@
 {
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.2",
-    "@uniswap/lib": "4.0.1-alpha",
-    "@uniswap/v2-core": "1.0.0"
+    "@uniswap/lib": "file:local-libs/uniswaplib/lib",
+    "@uniswap/v2-core": "file:local-libs/uniswaplib/v2-core"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
