@@ -1,0 +1,4 @@
+[submodule "v2/contracts/uniswap-v2-core"]
+	path = v2/contracts/uniswap-v2-core
+	url = https://0xharrywang@github.com/0xharrywang/uniswap-v2-core.git
+	branch = deploy
