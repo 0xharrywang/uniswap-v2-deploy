@@ -11,6 +11,12 @@ const settings = {
 
 
 module.exports = {
+  networks: {
+    local: {
+      url: "http://127.0.0.1:8545/",
+    }
+  },
+
   solidity: {
     compilers: [
       // For uniswap-v2-core
