@@ -2,3 +2,7 @@
 	path = v2/contracts/uniswap-v2-core
 	url = https://0xharrywang@github.com/0xharrywang/uniswap-v2-core.git
 	branch = deploy
+[submodule "v2/contracts/uniswap-v2-periphery"]
+	path = v2/contracts/uniswap-v2-periphery
+	url = https://0xharrywang@github.com/0xharrywang/uniswap-v2-periphery.git
+	branch = deploy
