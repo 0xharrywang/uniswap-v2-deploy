@@ -1,8 +1,0 @@
-[submodule "contracts/uniswap-v2-core"]
-	path = contracts/uniswap-v2-core
-	url = https://github.com/0xharrywang/uniswap-v2-core.git
-	branch = deploy
-[submodule "contracts/uniswap-v2-periphery"]
-	path = contracts/uniswap-v2-periphery
-	url = https://github.com/0xharrywang/uniswap-v2-periphery.git
-	branch = deploy
