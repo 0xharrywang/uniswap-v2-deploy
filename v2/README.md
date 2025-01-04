@@ -1,10 +1,10 @@
 # Sample Hardhat Project
 
-deploy uniswap-v2
+deploy uniswap-v2 contracts
 
 ```shell
-npm install --save-dev hardhat
-npx hardhat init
-npm install --save-dev "hardhat@^2.22.17" "@nomicfoundation/hardhat-toolbox@^5.0.0"
+npm install
 npx hardhat compile
+npx hardhat run scripts/init.js --network local
+npx hardhat run scripts/deploy.js --network local
 ```
