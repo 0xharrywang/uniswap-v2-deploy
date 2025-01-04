@@ -6,3 +6,7 @@
 	path = v2/contracts/uniswap-v2-periphery
 	url = https://0xharrywang@github.com/0xharrywang/uniswap-v2-periphery.git
 	branch = deploy
+[submodule "interface"]
+	path = interface
+	url = https://0xharrywang@github.com/0xharrywang/uniswap-interface.git
+	branch = deploy-v2
