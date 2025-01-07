@@ -20,8 +20,9 @@ function init() {
         /.*\/\/\s*init code hash/, `                hex'${INIT_CODE_HASH}' // init code hash`
       )
     );
-    saveUniswapAddress(hre.network.name, 'INIT_CODE_HASH', INIT_CODE_HASH);
-    console.log("INIT_CODE_HASH: ", INIT_CODE_HASH);
+    // 注意哪些需要加 0x，哪些不需要加
+    saveUniswapAddress(hre.network.name, 'INIT_CODE_HASH', COMPUTED_INIT_CODE_HASH);
+    console.log("INIT_CODE_HASH: ", COMPUTED_INIT_CODE_HASH);
 }
 
 init();

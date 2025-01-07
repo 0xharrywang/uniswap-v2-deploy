@@ -21,5 +21,3 @@ async function deployTokens() {
 
 
 deployTokens().then(() => console.log(" ")).catch(console.error);
-
-

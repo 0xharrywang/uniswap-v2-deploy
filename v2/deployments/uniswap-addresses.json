@@ -1,5 +1,6 @@
 {
     "sepolia": {
+        "INIT_CODE_HASH": "0x79681bc74104e3832134fbdbf4e4da393567d488beea1ff08eaad502457ed2c6",
         "WETH": "0x9d8715355b0Dd5E612571f59a0DDa92F2B6A9798",
         "UniswapV2Factory": "0x08c0259b8FF5Ba79AA86Af8Cb8308603b84D6eb0",
         "UniswapV2Router01": "0xa58F93C2fC0142dBbD111b10BeBA37F5aF771de6",
