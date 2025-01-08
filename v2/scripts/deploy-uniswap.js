@@ -11,17 +11,19 @@ async function deployUniswap() {
     console.log(`${"-".repeat(32) + deployUniswap.name + "-".repeat(32)}`);
     // 部署 UniswapV2Factory
     const factory = await (await (await ethers.getContractFactory('UniswapV2Factory')).deploy((await ethers.getSigners())[0].address)).waitForDeployment();
-    // 部署 UniswapV2Router01
-    const router1 = await (await (await ethers.getContractFactory('UniswapV2Router01')).deploy(factory.target, weth.target)).waitForDeployment();
     // 部署 UniswapV2Router02
     const router2 = await (await (await ethers.getContractFactory('UniswapV2Router02')).deploy(factory.target, weth.target)).waitForDeployment();
+    // 部署 multicall
+    const multicall = await (await (await ethers.getContractFactory('Multicall')).deploy()).waitForDeployment();
+
     console.log(`${"Factory deployed to : ".padStart(28)}${factory.target}`);
-    console.log(`${"Router01 deployed to : ".padStart(28)}${router1.target}`); 
     console.log(`${"Router02 deployed to : ".padStart(28)}${router2.target}`);
+    console.log(`${"multicall deployed to : ".padStart(28)}${multicall.target}`);
+    
     saveUniswapAddress(hre.network.name, "WETH", weth.target);
     saveUniswapAddress(hre.network.name, "UniswapV2Factory", factory.target);
-    saveUniswapAddress(hre.network.name, "UniswapV2Router01", router1.target);
     saveUniswapAddress(hre.network.name, "UniswapV2Router02", router2.target);
+    saveUniswapAddress(hre.network.name, "Multicall", multicall.target);
     
 }
 

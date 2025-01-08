@@ -29,6 +29,13 @@ async function verifyUniswap() {
     address: items.UniswapV2Router02,
     constructorArguments: [items.UniswapV2Factory, items.WETH],
   });
+
+  // Multicall
+  await hre.run("verify:verify", {
+    address: items.Multicall,
+    constructorArguments: [],
+  });
+
 }
 
 verifyUniswap();
